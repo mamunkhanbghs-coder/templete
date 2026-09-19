@@ -1,0 +1,6 @@
+{
+  "name": "TemplateIQ",
+  "description": "AI-powered website template discovery platform to search, filter, preview, compare, save, and explore modern website templates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

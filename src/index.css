@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-pine-900: #023331;
+    --color-pine-800: #004643;
+    --color-wine-900: #5e171a;
+    --color-rich-dark: #171616;
+    --color-crimson: #fb3640;
+    --color-pure-dark: #000000;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #171616;
+    background-color: #fcfbf9;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .dark body,
+  html.dark body {
+    color: #f1f0ea;
+    background-color: #0d0e0e;
+  }
+}
+
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-serif-title {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+/* Responsive iframe device viewport container styles */
+.device-wrapper-desktop {
+  width: 100%;
+  height: 100%;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.device-wrapper-tablet {
+  width: 768px;
+  max-width: 100%;
+  height: 90%;
+  margin: 0 auto;
+  border: 12px solid #1e293b;
+  border-radius: 28px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+.device-wrapper-mobile {
+  width: 390px;
+  max-width: 100%;
+  height: 844px;
+  max-height: 90%;
+  margin: 0 auto;
+  border: 12px solid #0f172a;
+  border-radius: 36px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
